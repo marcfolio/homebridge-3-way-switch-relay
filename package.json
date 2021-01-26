@@ -1,41 +1,33 @@
 {
-  "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
-  "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
-  "license": "Apache-2.0",
+  "name": "homebridge-garagedoor-command",
+  "version": "0.4.1",
+  "description": "Garage Door plugin for homebridge: https://github.com/nfarina/homebridge",
+  "keywords": [
+    "homebridge-plugin",
+    "garage",
+    "garage-door"
+  ],
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "author": {
+    "name": "Alex 'apexad' Martin"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "git://github.com/apexad/homebridge-garagedoor-command.git"
   },
-  "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
-  },
-  "engines": {
-    "node": ">=10.17.0",
-    "homebridge": ">=1.0.0"
-  },
-  "main": "dist/index.js",
-  "scripts": {
-    "lint": "eslint src/**.ts --max-warnings=0",
-    "watch": "npm run build && npm link && nodemon",
-    "build": "rimraf ./dist && tsc",
-    "prepublishOnly": "npm run lint && npm run build"
-  },
-  "keywords": [
-    "homebridge-plugin"
+  "funding": [
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.me/apexadm"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/apexad"
+    }
   ],
-  "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^14.14.6",
-    "@typescript-eslint/eslint-plugin": "^4.6.1",
-    "@typescript-eslint/parser": "^4.6.1",
-    "eslint": "^7.13.0",
-    "homebridge": "^1.2.3",
-    "nodemon": "^2.0.6",
-    "rimraf": "^3.0.2",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.5"
-  }
+  "license": "MIT",
+  "dependencies": {}
 }
